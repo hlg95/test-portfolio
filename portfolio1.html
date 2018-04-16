@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <link href="portfolio1.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container1">
+
+    </div>
+    <nav>
+        <ul class="topnav" id="dropdownclick">
+            <li><a href="home">Home</a></li>
+            <li><a href="home">News</a></li>
+            <li><a href="home">Contact</a></li>
+            <li><a href="home">About</a></li>
+            <li class="topnav-right"><a href="home">Sing up</a></li>
+            <li class="topnav-right"><a href="home">Sing in</a></li>
+            <li class="dropdownicon"><a href="javascript:void(0)" onclick="dropdownmenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+    <div class="container" id="section-1-gradient">
+        <div class="row">
+            <div class="row-6">
+                <div class="leftside-col">
+                    <h1 class="large">Crazy radness.</h1>
+                    <h1 class="large">Made for developers.</h1>
+                </div>
+                <form>
+                    <div class="leftside-col">
+                        <h2>username</h2>
+                        <input class="inputbox" name="username" type="text" placeholder="username">
+                        <h2>password</h2>
+                        <input class="inputbox" name="passworld" type="text" placeholder="password">
+                    </div>
+                </form>
+            </div>
+            <div class="row-6">
+                <div class="rightside-col">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HQgZh-eGESw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+  function dropdownmenu(){
+      var x = document.getElementById("dropdownclick");
+      if (x.className === "topnav")
+          x.className += " responsive";
+      else {
+          x.className = "topnav";
+      }
+  }  
+</script>
+</body>
+</html>
